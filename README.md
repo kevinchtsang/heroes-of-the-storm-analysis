@@ -24,6 +24,22 @@ Then use the `HotS replays to dataframe.ipynb` notebook to parse your replays an
 
 `shiny_hero_deaths.R` is a Shiny app to explore the data interactively.
 
+### Data Exploration Interface
+The plot is built using plotly which you can zoom and pan around the map. Hovering over a data point will provide more information.
+
+All the filters are provided on the left, where you can choose the map and any players to focus on. Game phase can be selected to highlight the kills that happend during different phase of the game based on the levels of each team.
+
+After choosing a player, you can choose between kills (close to the kill, not necessary last hit), deaths, both, or all data from their games (played_game)
+
+If a map or player is missing, it means there is no available data for your choosen selection. Check the replays you have parsed.
+
+Under Advanced options, you can change the bin width of the heatmap, change plot type between a heatmap (summary) and scatter plot (every point), and choose colour scale that best displays the data on different maps.
+
+Additional information can be extracted using dplyr in the R file or in the `HotS replays to dataframe.ipynb` python file before the CSV is exported.
+
+![Home Screen](/screenshot/heat_map.png?raw=true)
+![Zoomed in to bottom lane](/screenshot/heat_map_zoom.png?raw=true)
+![Focus on one player's kill participation](/screenshot/one_player_kills.png?raw=true)
 
 ## Notes about protocol variables
 
