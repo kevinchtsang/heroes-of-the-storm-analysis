@@ -27,8 +27,9 @@ Then use the `HotS replays to dataframe.ipynb` notebook to parse your replays an
 
 ## Notes about protocol variables
 
-protocol uses Dota/Warcraft terms (order/chaos team, creep)
-Nothing useful in initdata
+protocol uses Dota/Warcraft terms (order/chaos team, creep), some heroes are known by Diablo/Warcraft names, e.g. Li Ming = Wizard, Brightwing = Faerie Dragon
+
+Not much useful in initdata
 
 units = structures, players, minions
 
@@ -38,15 +39,15 @@ structures = TownHall, Moonwell, CannonTower
 
 Tracker Events:
 
-    *NNet.Replay.Tracker.SUnitBornEvent 
+    NNet.Replay.Tracker.SUnitBornEvent 
       = structures and units born and player summons (_eventid = 1)
       eg force wall, aba toxic nest
       m_controlPlayerId 0, 11 and 12 are AI, player index start at 1
-    *NNet.Replay.Tracker.SUnitDiedEvent 
+    NNet.Replay.Tracker.SUnitDiedEvent 
       = units, towers, and players summon die (_eventid = 2)
-    *NNet.Replay.Tracker.SUnitOwnerChangeEvent 
+    NNet.Replay.Tracker.SUnitOwnerChangeEvent 
       = sylvanas and towers of doom?? (_eventid = 3)
-    *NNet.Replay.Tracker.SUnitTypeChangeEvent 
+    NNet.Replay.Tracker.SUnitTypeChangeEvent 
       = killing and reborn structures (_eventid = 4)
     NNet.Replay.Tracker.SUpgradeEvent 
       = set up player teams (_eventid = 5)
