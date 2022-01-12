@@ -18,11 +18,11 @@ git clone https://github.com/Blizzard/heroprotocol.git
 python -m pip install -r ./heroprotocol/heroprotocol/requirements.txt
 ```
 
-Then use the `HotS replays to dataframe.ipynb` notebook to parse your replays and combine them into a single dataframe `hero_died_all.csv`. This can be analysed in any method of your choice.
+Then use the [`HotS replays to dataframe.ipynb`](HotS replays to dataframe.ipynb) notebook to parse your replays and combine them into a single dataframe `hero_died_all.csv`. This can be analysed in any method of your choice.
 
-`HotS Analyse Multiple Games.ipynb` notebook is used to manually calibrate the coordinates of the parsed replays to the official Blizzard map overlay. It can also be a place to conduct data analysis using python.
+[`HotS Analyse Multiple Games.ipynb`](HotS Analyse Multiple Games.ipynb) notebook is used to manually calibrate the coordinates of the parsed replays to the official Blizzard map overlay. It can also be a place to conduct data analysis using python.
 
-`shiny_hero_deaths.R` is a Shiny app to explore the data interactively.
+[`shiny_hero_deaths.R`](shiny_hero_deaths.R) is a Shiny app to explore the data interactively.
 
 ### Data Exploration Interface
 The plot is built using plotly which you can zoom and pan around the map. Hovering over a data point will provide more information.
