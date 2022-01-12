@@ -37,9 +37,9 @@ Under Advanced options, you can change the bin width of the heatmap, change plot
 
 Additional information can be extracted using dplyr in the R file or in the `HotS replays to dataframe.ipynb` python file before the CSV is exported.
 
-![Home Screen](/screenshot/heat_map.png?raw=true)
-![Zoomed in to bottom lane](/screenshot/heat_map_zoom.png?raw=true)
-![Focus on one player's kill participation](/screenshot/one_player_kills.png?raw=true)
+![Home Screen](/blob/main/screenshot/heat_map.png?raw=true)
+![Zoomed in to bottom lane](/blob/main/screenshot/heat_map_zoom.png?raw=true)
+![Focus on one player's kill participation](/blob/main/screenshot/one_player_kills.png?raw=true)
 
 ## Notes about protocol variables
 
