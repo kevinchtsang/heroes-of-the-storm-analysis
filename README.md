@@ -190,5 +190,10 @@ Details:
     m_result = 1 (win) or 2 (lose)
     m_title = map name
 
+## Limitations
+The health and mana of each individual hero and unit cannot be extracted easily. Also, the ability cast and cooldowns are not easily extracted. 
+
+Open to suggestions and discussion to improve data extracted.
+
 ## Version
 The code has been last updated with the [heroprotocol 2.55.0.86938 - 07 Dec 2021 replay parser](https://github.com/Blizzard/heroprotocol/releases/tag/v2.55.0.86938)
