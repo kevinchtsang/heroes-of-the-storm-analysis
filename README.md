@@ -1,5 +1,7 @@
 # Heroes of the Storm Analysis
-Heroes of the Storm replay parsing and analysis, to take a deeper look at your games and make decisions backed by data. This pipeline is setup to process multiple games for data analysis. A data exploration tool (Shiny app) has been included to aid your analysis. 
+Heroes of the Storm replay parsing and analysis, to take a deeper look at your games and make decisions backed by data. See where you are getting kills, who you are getting kills with, where you are getting ganked, and more. 
+
+This pipeline is setup to process multiple games for data analysis, try to include as many relivant games for each map as possible. A data exploration tool (Shiny app) has been included to aid your analysis. 
 
 Good luck; have fun
 
