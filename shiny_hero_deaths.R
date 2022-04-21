@@ -1,5 +1,6 @@
 library(shiny)
 library(plotly)
+library(DT)
 library(tidyverse)
 library(here)
 
@@ -96,7 +97,7 @@ ui <- fluidPage(
       condition = "input.plot_type == 'scatter'",
       plotlyOutput('plot_hero_died_scatter')),
     textOutput('map_description'),
-    tableOutput('analysis_summary')
+    DT::dataTableOutput('analysis_summary')
   )
 )
 
@@ -264,7 +265,7 @@ server <- function(input, output, session) {
            "\nReplay files: ", paste(unique(plot_died_df()$replay_file),collapse = ",\n"))
   })
   
-  output$analysis_summary <- renderTable(analysis_summary_df())
+  output$analysis_summary <- DT::renderDataTable(analysis_summary_df())
 }
 
 shinyApp(ui,server)
