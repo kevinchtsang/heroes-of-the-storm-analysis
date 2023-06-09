@@ -6,7 +6,7 @@ This pipeline is setup to process multiple games for data analysis, try to inclu
 Good luck; have fun
 
 ## Getting Started
-You will need to put your replays in a folder. If you don't have any recent replays, (Heroes Lounge)[https://heroeslounge.gg/] hosts amature HotS matches and individual match replays can be downloaded.
+You will need to put your replays in a folder. If you don't have any recent replays, [Heroes Lounge](https://heroeslounge.gg/) hosts amature HotS matches and individual match replays can be downloaded.
 
 ### Parsing Replays
 First install the [heroprotocol](https://github.com/Blizzard/heroprotocol).
@@ -39,9 +39,9 @@ Under Advanced options, you can change the bin width of the heatmap, change plot
 
 Additional information can be extracted using dplyr in the R file or in the `HotS replays to dataframe.ipynb` python file before the CSV is exported.
 
-![Home Screen](/screenshots/heat_map.png?raw=true)
-![Zoomed in to bottom lane](/screenshots/heat_map_zoom.png?raw=true)
-![Focus on one player's kill participation](/screenshots/one_player_kills.png?raw=true)
+![Home Screen](https://raw.githubusercontent.com/kevinchtsang/heroes-of-the-storm-analysis/main/screenshots/heat_map.png)
+![Zoomed in to bottom lane](https://raw.githubusercontent.com/kevinchtsang/heroes-of-the-storm-analysis/main/screenshots/heat_map_zoom.png)
+![Focus on one player's kill participation](https://raw.githubusercontent.com/kevinchtsang/heroes-of-the-storm-analysis/main/screenshots/one_player_kills.png)
 
 ## Notes about protocol variables
 
